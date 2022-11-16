@@ -1,9 +1,35 @@
 body {
-    background-color: powderblue;
+    background-color: black;
   }
   h1 {
-    color: blue;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
   }
   p {
-    color: red;
+    font-family: Helvetica, sans-serif;
+    float: left;
+    color: white;
+    padding: 5%;
+  }
+  .sisu {
+    font-family: Helvetica, sans-serif;
+    float: right;
+    color: white;
+    padding: 5%;
+  }
+
+  .profiilipilt {
+    float: left;
+
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
   }
