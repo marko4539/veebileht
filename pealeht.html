@@ -2,37 +2,51 @@
 <html>
     <head>
         <link rel="stylesheet" href="pealeht.css">
+        <title>Veebileht</title> 
+        <!-- muuda hiljem -->
     </head>
 
     <body>
-        <div class="header">
-            <h1>Regina</h1>
-            <p>My supercool header</p>
-        </div>
+        <!-- JavaScripti importimine -->
+        <script src="pealeht.js"></script>
 
-        <div class="topnav">
-            <a class="active" href="pealeht.html">PEALEHT</a>
-            <a href="#KUNST">KUNST</a>
-            <a href="#contact">TÄTOVEERINGUD</a>
-            <a href="kontakt.html">KONTAKT</a>
-        </div>
-         
-        <br></br>
-        <p class="sisu">See lehekülg tutvustab Regina kunsti ja muud....(mingi arukas tekst)</p>
+        <main>
+            <header>
+              <div class="container">
+                <i class="fas fa-5x fa-laugh"></i>
+                <h1>Regina (Perekonnanimi)</h1>
+              </div>
+            </header>
+          
+            <section>
+                <nav class="menüü">
+                    <a class="menüülink" href="pealeht.html">PEALEHT</a>
+                    <a class="menüülink" href="#KUNST">KUNST</a>
+                    <a class="menüülink" href="#contact">TÄTOVEERINGUD</a>
+                    <a class="menüülink" href="kontakt.html">KONTAKT</a>
+                </nav>
 
-        <br><br>
-        <img src="#kriipsujuku.png" alt="Pilt" class="profiilipilt">
+                <div class="sisutekst">
+                    <p class="sisu">See lehekülg tutvustab Regina kunsti ja muud....(mingi arukas tekst)</p>
+                </div>
 
+                <div class="profiilipilt">
+                    <img src="#kriipsujuku.png" alt="Pilt" class="profiilipilt">
+                </div>
+            </section>
 
-        <h3>Kontaktid</h3>
-        <a href="https://www.instagram.com/derpff/">Instagram</a>
-        
-        <div class="footer">
-            <p>Autorid: Meie</p>
-        </div>
-        <!-- <footer>
-            <p>Autorid: Meie</p>
-            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-          </footer> -->
+            <section class="kontakt">
+                <div>
+                    <h3>Kontaktid</h3>
+                    <a href="https://www.instagram.com/derpff/">Instagram</a>
+                </div>
+            </section>
+
+                <div class="footer">
+                    <p>Autorid: Meie</p>
+                </div>
+            </section>
+          </main>
+
     </body>
 </html>

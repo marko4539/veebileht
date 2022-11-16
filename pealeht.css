@@ -1,30 +1,13 @@
-body {
-    background-color: black;
-  }
-  h1 {
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    color: white;
-  }
-  p {
-    font-family: Helvetica, sans-serif;
-    float: left;
-    color: white;
-    padding: 5%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   .sisu {
     font-family: Helvetica, sans-serif;
     float: right;
     color: white;
     padding: 5%;
-  }
-
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
   }
 
   .profiilipilt {
@@ -41,4 +24,104 @@ body {
     background-color: aliceblue;
     color: black;
     text-align: center;
+    display: block;
   }
+
+.menüü {
+  font-size: 5;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  color: white;
+}
+
+.menüü .menüülink {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+/* Parallax */
+body {
+  background-attachment: fixed;
+  background-image: url("taust.png");
+  background-position: center;
+  background-size: cover;
+  row-gap: 4rem;
+  text-align: center;
+  color: black;;
+  font-family: "AndaleMono", Andale Mondo;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  color: black;
+  z-index: -1;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  height: 50vh;
+  background: black;
+  color: white;
+}
+
+.kontakt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 1;
+  height: 50vh;
+  background: black;
+  color: white;
+}
+
+.animate-me {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
