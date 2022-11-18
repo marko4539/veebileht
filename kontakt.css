@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    /* background-attachment: fixed;
+    background-image: url("taust.png");
+    background-position: center;
+    background-size: cover;
+    row-gap: 4rem; */
+    background-color: black;
+    text-align: center;
+    color: white;;
+    font-family: "AndaleMono", Andale Mondo;
+}
+
+.menüü {
+    font-size: 5;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    color: white;
+  }
+  
+  .menüü .menüülink {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+  }
