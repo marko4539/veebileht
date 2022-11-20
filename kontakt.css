@@ -2,19 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "AndaleMono", Andale Mondo;
   }
 
 body {
     /* background-attachment: fixed;
     background-image: url("taust.png");
     background-position: center;
-    background-size: cover;
-    row-gap: 4rem; */
+    background-size: cover; */
+    row-gap: 4rem;
     background-color: black;
     text-align: center;
     color: white;;
     font-family: "AndaleMono", Andale Mondo;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 40;
+    color: white;
+    text-align: center;
+    font-size: large;
+    animation: fadeIn 1.5s ease-in-out;
+  }
 
 .menüü {
     font-size: 5;
@@ -36,4 +50,73 @@ body {
     text-decoration: none;
     padding: 15px;
     cursor: pointer;
-  }
+}
+
+.kleepuv{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.tekstilink{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.puffer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: black;
+}
+
+.sisu {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: white;
+    padding: 5%;
+}
+.kõrvuti{
+    display: flex;
+}
+
+.tekst{
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    row-gap: 40px;
+    line-height: 30px;
+    width: 50%;
+    height: 50vh;
+    align-items: left;
+
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.kaart {
+    flex: 1;
+    flex-direction: column;
+    width: 50%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+iframe{
+    width: 95%;
+    height: 95%;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}

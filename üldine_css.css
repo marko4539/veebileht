@@ -1,4 +1,32 @@
-.pealkiri{
-    font-family: Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menüü {
+    font-size: 5;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
     color: white;
 }
+
+.menüü .menüülink {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+
+
+

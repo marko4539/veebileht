@@ -10,4 +10,4 @@ window.addEventListener("scroll", function() {
       document.querySelector("section h3").classList.add("animate-me")
       document.querySelector("section img").classList.add("animate-me")
     }, 400)
-  })
+})
