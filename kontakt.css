@@ -17,6 +17,12 @@ body {
     font-family: "AndaleMono", Andale Mondo;
 }
 
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -28,42 +34,48 @@ header {
     text-align: center;
     font-size: large;
     animation: fadeIn 1.5s ease-in-out;
-  }
-
-.menüü {
-    font-size: 5;
-    width: 100vw;
-    height: 60px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    color: white;
-  }
-  
-  .menüü .menüülink {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    cursor: pointer;
 }
 
-.kleepuv{
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
-
-.tekstilink{
+header a{
     color: white;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 5px;
+    width: 22vh;
+    height: 5vhpx;
 }
+
+header a:hover{
+    background-color: #393a3d;
+    color: white;
+    border-radius: 1vmin;
+}
+
+nav {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  top: 15px;
+  margin-top: 15px;
+}
+
+nav a:hover {
+  background-color: #393a3d;
+  color: white;
+  border-radius: 1vmin;
+}
+
 
 .puffer {
     width: 100%;
@@ -76,9 +88,6 @@ header {
     text-align: left;
     color: white;
     padding: 5%;
-}
-.kõrvuti{
-    display: flex;
 }
 
 .tekst{
@@ -100,16 +109,64 @@ h2{
 .kaart {
     flex: 1;
     flex-direction: column;
-    width: 50%;
-    height: 50vh;
+    width: 100%;
+    height: 75vh;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 iframe{
-    width: 95%;
-    height: 95%;
+    margin-top: 30px;
+    width: 90vh;
+    height: 60vh;
+    border-radius: 1vmin;
+}
+
+.ikoonid{
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.ikoon:nth-child(2){
+    transition-delay: 200ms;
+}
+.ikoon:nth-child(3){
+    transition-delay: 400ms;
+}
+.ikoon:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.ikoon{
+    flex-basis: 20px;
+    height: 20px;
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.ikoon a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.ikoon a:hover{
+    background-color: #393a3d;
+    color: white;
+    border-radius: 5px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 2.011vmin;
 }
 
 .forms{
@@ -119,4 +176,18 @@ iframe{
     text-align: center;
     align-items: center;
     margin-top: 30px;
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
