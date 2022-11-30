@@ -7,7 +7,6 @@
     <title>Document</title>
     <script type="text/javascript" src="tattoo.js"></script>
     <link rel="stylesheet" href="tattoo.css" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
     
 <body>
@@ -21,49 +20,33 @@
         </p>
         <div class="img2"></div>
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="img-box">
-                    <img src="img3.PNG" style="width:600px;height:600px;">
-                    <p>Käsi käes</p>
-                </div></div>
-                <div class="swiper-slide">
-                    <div class="img-box">
-                        <img src="img4.PNG" style="width:600px;height:600px;">
-                        <p>Roos</p>
-                    </div></div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="img5.PNG"style="width:600px;height:600px;">
-                            <p>Ingel</p>
-                        </div></div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="img6.PNG" style="width:600px;height:600px;">
-                            <p>Lind</p>
-                        </div></div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="img7.PNG" style="width:600px;height:600px;">
-                            <p>Puu oks</p>
-                        </div></div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="img8.PNG" style="width:600px;height:600px;">
-                            <p>Lill-muster</p>
-                        </div></div>
-                    <div class="swiper-slide">
-                        <div class="img-box">
-                            <img src="img9.PNG" style="width:600px;height:600px;">
-                            <p>Abstract Art</p>
-                        </div></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="tattoo.js"></script>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img3.PNG" width="600px" height="350px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img4.PNG" width="600px" height="350px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img5.PNG" width="600px" height="350px">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 </body>
 </html>
