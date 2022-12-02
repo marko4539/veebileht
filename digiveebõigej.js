@@ -1,32 +1,32 @@
 window.onload = function() {
-    const EFFECT = document.querySelector('#effect');
+  const EFFECT = document.querySelector('#effect');
 
-    window.addEventListener('scroll', scrollEffect);
+  window.addEventListener('scroll', scrollEffect);
 
-    function scrollEffect() {
-        if(window.scrollY>=500) {
-            EFFECT.style.opacity = '1';
-            EFFECT.style.transform = 'translateX(0px)';
-            EFFECT.style.transition = '1s ease-in-out';
-        }
-        else {
-            EFFECT.style.opacity = '0'
-            EFFECT.style.transform = 'translateX(-50px)'
-        }
-    }
-    scrollEffect();
+  function scrollEffect() {
+      if(window.scrollY>=500) {
+          EFFECT.style.opacity = '1';
+          EFFECT.style.transform = 'translateX(0px)';
+          EFFECT.style.transition = '1s ease-in-out';
+      }
+      else {
+          EFFECT.style.opacity = '0'
+          EFFECT.style.transform = 'translateX(-50px)'
+      }
+  }
+  scrollEffect();
 }
 let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 } 
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
