@@ -59,7 +59,12 @@ body {
   background-size: cover;
   margin-right: 70px;
 }
-
+.vaheparagraaf{
+  color: white;
+  position: relative;
+  left: 42.5%;
+  top: 180%;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 600px;
