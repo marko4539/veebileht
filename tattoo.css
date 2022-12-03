@@ -21,12 +21,13 @@ header {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 70%;
-    height: 90vh;
-    position: relative;
-    margin: auto;
-    z-index: 0;
-  }
+  max-width: 70%;
+  height: 80vh;
+  background-color: #717171;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
   
   /* Hide the images by default */
   .mySlides {

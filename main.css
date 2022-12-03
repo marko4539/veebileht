@@ -83,9 +83,9 @@ nav a:hover {
 }
 
 body {
-    row-gap: 8px;
-    text-align: center;
-    background-color: black;
+  line-height: 1.5;
+  text-align: center;
+  background-color: black;
 }
   
 header {
@@ -93,6 +93,7 @@ header {
     position: relative;
     background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -126,6 +127,8 @@ header h1 {
     color: white;
     padding: 5%;
     width: 60%; 
+    text-align: justify;
+    text-justify: distribute;
 }
 
 .tekstipilt{
@@ -141,5 +144,5 @@ header h1 {
     width: 600px;
     height: 60vh;
     border-radius: 1vmin;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
