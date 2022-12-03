@@ -54,7 +54,8 @@ body {
   row-gap: 8px;
   text-align: center;
   color: black;
-  height: auto;
+  height: min-content;
+  
 }
 
 header {
