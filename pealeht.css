@@ -51,10 +51,10 @@ body {
   background-attachment: fixed;
   background-image: url("taust.png");
   background-position: center;
-  background-size: auto;
   row-gap: 8px;
   text-align: center;
-  color: black;;
+  color: black;
+  height: auto;
 }
 
 header {

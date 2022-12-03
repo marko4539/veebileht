@@ -113,7 +113,12 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     z-index: 1;
-    height: min-content;
     background: black;
     color: white;
+}
+
+.puffer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: black;
 }
