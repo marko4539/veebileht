@@ -7,40 +7,55 @@
     <title>Document</title>
     <script type="text/javascript" src="digiveebõigej.js"></script>
     <link rel="stylesheet" href="digi.css" type="text/css" />
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="img"></div>
-    <div class="img-text">
-        <h1>Digidisain</h1>
-    </div>
+    <header>
+      <h1>Digidisain</h1>
+    </header>
+    <nav>
+      <a href="pealeht.html">PEALEHT</a>
+      <a href="digiveebõige1.html">KUNST</a>
+      <a href="tattoo.html">TÄTOVEERINGUD</a>
+      <a href="kontakt.html">KONTAKT</a>
+      <div class="keeled">
+          <button class="dropdown"><img class="menuu" src="menuu.png"></button>
+          <div class="keelevalik">
+              <a href="#eesti">Eesti keel</a>
+              <a href="#inglise">English</a>
+              <a href="#vene">Русский</a>
+          </div>
+      </div>
+    </nav>
     <div id="effect">
-        <p class="paragraph">Alustasin lõbu pärast kuid nüüdseks võib minu joonistusi leida ka pinteresti seinadelt. Digikuns on olnud always mu väike side project kuid ma olen valmis pakkuma enda oskusi ka teistele mitte ainult endale. Mulle meeldib kõige rohkem inimesi joonistada ehk kui sul on vaja jõuludeks oma vanaisa kaardile joonistada you know who to call.<br>
+        <p class="sisu">
+          Alustasin lõbu pärast kuid nüüdseks võib minu joonistusi leida ka pinteresti seinadelt. Digikuns on olnud always mu väike side project kuid ma olen valmis pakkuma enda oskusi ka teistele mitte ainult endale. Mulle meeldib kõige rohkem inimesi joonistada ehk kui sul on vaja jõuludeks oma vanaisa kaardile joonistada you know who to call.<br>
           Hind on läbirääkimistel.
         </p>
-        <div class="img2">
-          <img src="regina.PNG"width="350px" height="370px"> 
-        </div>
+        <img class="tekstipilt" src="regina.PNG"> 
     </div>
     <!-- Slideshow container -->
     <div class="vaheparagraaf">
       <h2>Kliki galerii jaoks</h2>
     </div>
 
+    <div class="puffer"></div>
+
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="joon">
     <div class="mySlides fade">
-      <img src="digipilt1.png" width="600px" height="470px">
+      <img class="galerii" src="digipilt1.png">
     </div>
 
     <div class="mySlides fade">
-      <img src="digipilt4.png" width="600px" height="470px">
+      <img class="galerii" src="digipilt4.png">
     </div>
 
     <div class="mySlides fade">
-      <img src="digipilt3.png" width="600px" height="470px">
+      <img class="galerii" src="digipilt3.png">
     </div>
 
     <!-- Next and previous buttons -->
