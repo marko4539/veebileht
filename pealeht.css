@@ -51,10 +51,10 @@ section {
   width: 60%;
   line-height: 1.5;
   font-size: 20px;
+  justify-content: center;
+  align-items: center;
   text-align: justify;
   text-justify: distribute;
-
-
 }
 
 ul {

@@ -113,6 +113,16 @@ header h1 {
   font-size: 80px;
 }
 
+h2 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 40px;
+}
+
 .puffer {
     width: 100%;
     min-height: 20vh;
@@ -120,15 +130,15 @@ header h1 {
 }
 
 .sisu {
-    float: left;
-    float: right;
-    row-gap: 15px;
-    font-size: 20px;
-    color: white;
-    padding: 5%;
-    width: 60%; 
-    text-align: justify;
-    text-justify: distribute;
+  float: left;
+  float: right;
+  row-gap: 15px;
+  font-size: 20px;
+  color: white;
+  padding: 5%;
+  width: 60%; 
+  text-align: justify;
+  text-justify: distribute;
 }
 
 .tekstipilt{
