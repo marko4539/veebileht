@@ -1,4 +1,4 @@
-window.onload = function() {
+function function1() {
     const EFFECT = document.querySelector('#effect');
 
     window.addEventListener('scroll', scrollEffect);
@@ -16,6 +16,8 @@ window.onload = function() {
     }
     scrollEffect();
 }
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
