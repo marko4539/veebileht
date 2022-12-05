@@ -1,3 +1,4 @@
+// KOmmenteeritud failis tattoo.js
 function function1() {
   const EFFECT = document.querySelector('#effect');
 
