@@ -1,3 +1,4 @@
+// Näiteks võetud Youtube RTCODES kanali kood ja seda natuke modifitseeritud
 function function1() {
     const EFFECT = document.querySelector('#effect');
 
@@ -17,16 +18,14 @@ function function1() {
     scrollEffect();
 }
 
-
+// Viidatud varasemalt html failis
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 } 
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
