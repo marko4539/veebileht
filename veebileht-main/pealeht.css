@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Futura Md BT', sans-serif;
+  height: 100%;
+}
+
+
+
+h2 {
+  margin-top: 15vh;
+  margin-bottom: 15px;
+}
+
+/* Parallax scroll effect*/
+body {
+  text-align: center;
+  color: black;
+  height: min-content;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  background-image: url("taust1.jpg");
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: -1;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1;
+  height: 200vh;
+  background: black;
+  color: white;
+}
+
+.profiilikas {
+  width: 30%;
+  height: 65vh;
+  border-radius: 1vmin;
+}
+
+.paiknemine{
+  margin-top: 55px;
+}
+
+.suur_sisu {
+  width: 60%;
+  line-height: 1.5;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul li:before
+{
+  content: '\263E';
+  margin: 0 1em;    /* any design */
+}
+
+.animate-me {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

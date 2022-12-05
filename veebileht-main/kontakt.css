@@ -1,0 +1,148 @@
+
+body {
+    color: white;;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.konteiner{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.konteiner a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 30px;
+    width: 30vh;
+    height: 15vh;
+    flex-basis: 10px;
+    padding: 30px;
+}
+
+.konteiner a:hover{
+    background-color: #393a3d;
+    color: white;
+    border-radius: 1vmin;
+    align-items: center;
+}
+
+/* Lehe jaoks visuaalselt sobiv vormistus */
+.tekst{
+    flex: 1;
+    flex-direction: column;
+    padding: 5px;
+    row-gap: 40px;
+    line-height: 30px;
+    width: 50%;
+    height: 50vh;
+}
+
+.ikoonid{
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Loome nn "child elements" parent elemendi .ikoon sisse, mis laseb luua animatsiooni, kus ilmuks ikoonid justkui üksteise tagant */
+.ikoon:nth-child(2){
+    transition-delay: 200ms;
+}
+.ikoon:nth-child(3){
+    transition-delay: 400ms;
+}
+.ikoon:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.ikoon{
+    flex-basis: 10px;
+    height: 20px;
+    margin: 10px;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ikoon a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.ikoon a:hover{
+    background-color: #393a3d;
+    color: white;
+    border-radius: 5px;
+}
+
+.väike{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 2.011vmin;
+}
+
+/* Aitab kaarti pealkirjast õigel kaugusel hoida, seega ei ole üldises cssi failis */
+h2{
+    margin-bottom: 20px;
+}
+
+.kaart {
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+iframe{
+    margin-top: 30px;
+    width: 90vh;
+    height: 60vh;
+    border-radius: 1vmin;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
