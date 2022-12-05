@@ -6,4 +6,14 @@ window.addEventListener("scroll", function() {
   document.querySelector("header").style.transform = `translateY(${distance *
     1}px)`
   document.querySelector("header").style.transform = `translateY(${distance * 0.3}px)`
+  // Määrab aja, mmille möödumisel rakendatakse .querySelector'iga määratud elementidele klass "animate-me", mis on defineeritud 
+  // setTimeout(() => {
+  //   document.querySelector("section p").classList.add("animate-me")
+  //   document.querySelector("section h1").classList.add("animate-me")
+  //   document.querySelector(" section img").classList.add("animate-me")
+  //   document.querySelector("nav").classList.add("animate-me")
+  //   document.querySelector("section h2").classList.add("animate-me")
+  //   document.querySelector("section ul").classList.add("animate-me")
+
+  // }, 400)
 })
