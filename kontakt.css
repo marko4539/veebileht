@@ -9,48 +9,33 @@ section{
     align-content: center;
 }
 
-.pealkiri {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 40;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: large;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
 .konteiner{
     display: flex;
     width: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
-    float: center;
-
 }
 
-.pealkiri a{
+.konteiner a{
     color: white;
     text-decoration: none;
     cursor: pointer;
     margin: 30px;
     width: 30vh;
-    height: 5vhpx;
+    height: 15vh;
     flex-basis: 10px;
     padding: 30px;
-    float: center;
 }
 
-.pealkiri a:hover{
+.konteiner a:hover{
     background-color: #393a3d;
     color: white;
     border-radius: 1vmin;
     align-items: center;
 }
 
+/* Lehe jaoks visuaalselt sobiv vormistus */
 .tekst{
     flex: 1;
     flex-direction: column;
@@ -59,29 +44,6 @@ section{
     line-height: 30px;
     width: 50%;
     height: 50vh;
-    align-items: left;
-
-}
-
-h2{
-    margin-bottom: 20px;
-}
-
-.kaart {
-    flex: 1;
-    flex-direction: column;
-    width: 100%;
-    height: 85vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-iframe{
-    margin-top: 30px;
-    width: 90vh;
-    height: 60vh;
-    border-radius: 1vmin;
 }
 
 .ikoonid{
@@ -92,6 +54,7 @@ iframe{
     justify-content: center;
 }
 
+/* Loome nn "child elements" parent elemendi .ikoon sisse, mis laseb luua animatsiooni, kus ilmuks ikoonid justkui üksteise tagant */
 .ikoon:nth-child(2){
     transition-delay: 200ms;
 }
@@ -137,6 +100,28 @@ img{
     width: 50px;
     height: 50px;
     border-radius: 2.011vmin;
+}
+
+/* Aitab kaarti pealkirjast õigel kaugusel hoida, seega ei ole üldises cssi failis */
+h2{
+    margin-bottom: 20px;
+}
+
+.kaart {
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+iframe{
+    margin-top: 30px;
+    width: 90vh;
+    height: 60vh;
+    border-radius: 1vmin;
 }
 
 .forms{
