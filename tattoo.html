@@ -7,33 +7,50 @@
     <title>Document</title>
     <script type="text/javascript" src="tattoo.js"></script>
     <link rel="stylesheet" href="tattoo.css" type="text/css" />
+    <link rel="stylesheet" href="main.css">
 </head>
     
-<body>
-    <div class="img"></div>
-    <div class="img-text">
-        <h1>ReginaTattoo</h1>
-    </div>
+<body onload="currentSlide(1); function1()">
+  <header>
+      <h1>ReginaTattoo</h1>
+  </header>
+    
+    <nav>
+      <a href="pealeht.html">PEALEHT</a>
+      <a href="digiveebõige1.html">KUNST</a>
+      <a href="tattoo.html">TÄTOVEERINGUD</a>
+      <a href="kontakt.html">KONTAKT</a>
+      <div class="keeled">
+          <button class="dropdown"><img class="menuu" src="menuu.png" alt="menuu"></button>
+          <div class="keelevalik">
+              <a href="#eesti">Eesti keel</a>
+              <a href="#inglise">English</a>
+              <a href="#vene">Русский</a>
+          </div>
+      </div>
+    </nav>
     <div id="effect">
-        <p class="paragraph">Mingi tekst kasutatavatest värvidest masinatest idont know mida iganes veel
-            eksole.
+        <p class="sisu">
+          Alustasin tätoveerimist 2021. aasta sügisel . Kõigepealt käisin ühes stuudios praktikal ja seejärel tegelesin sellega veel aasta aega iseseisvalt. Lõpuks hakkasin tööle Backbone tattoo stuudios 2022. aasta augustis. Olen tegelikult kogu elu kaalunud tattoo artisti ametit. Juba 10-aastaselt lehitsesin tattoo raamatuid raamatupoodides, ent ostsin oma esimese masina alles 9 aastat hiljem tänu TikTokile. Nägin videot, kus inimene tätoveeris kunstnahka ning mõtlesin, et tahaks ka seda proovida. Kuigi ma kardan verd ja nõelu, siis tätoveerimise protsess seostub mul kunstiga, mitte meditsaiinilise protseduuriga. Hetkel teen ma graafilisi tätoveeringuid, kuid tulevikus tahaks jõuda stiili poolest neo traditional’ini. Ma armastan tätoveerida taimi ja loomi, näiteks pojenge ja liblikad. Olen huvitatud suurtemast projektidest. Mu tunnihind on 80€/h.
         </p>
-        <div class="img2"></div>
+        <img class="tekstipilt" src="pilt1.PNG">
     </div>
+
+    <div class="puffer"></div>
     <!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="slideshow-container" id="esimene">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <img src="img3.PNG" width="600px" height="350px">
+    <img class="galerii" src="img3.PNG">
   </div>
 
   <div class="mySlides fade">
-    <img src="img4.PNG" width="600px" height="350px">
+    <img class="galerii" src="img4.PNG">
   </div>
 
   <div class="mySlides fade">
-    <img src="img5.PNG" width="600px" height="350px">
+    <img class="galerii" src="img5.PNG">
   </div>
 
   <!-- Next and previous buttons -->
@@ -48,5 +65,6 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+<div class="puffer"></div>
 </body>
 </html>

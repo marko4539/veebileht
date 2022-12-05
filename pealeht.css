@@ -3,73 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Futura Md BT', sans-serif;
- 
   height: 100%;
 }
 
-.sisu {
-    float: right;
-    row-gap: 15px;
-    font-size: 20px;
-    color: white;
-    padding: 5%;
-    width: 60%;
-    float: left;
-}
 
-.sisutekst{
-  color: white;
-}
 
-.sisutekst h1{
+h2 {
   margin-top: 15vh;
-}
-
-.profiilipilt {
-  width: 30%;
-  height: 50vh;
-  float: right;
-  border-radius: 50%;
-  margin-right: 10vh;
-
-}
-
-footer {
-  display: flex;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 20px;
-  background-color: black;
-  color: #393a3d;
-  text-align: center;
-  display: block;
+  margin-bottom: 15px;
 }
 
 /* Parallax scroll effect*/
 body {
-  background-attachment: fixed;
-  background-image: url("taust.png");
-  background-position: center;
-  row-gap: 8px;
   text-align: center;
   color: black;
   height: min-content;
-  
+  z-index: 1;
 }
 
 header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  height: 100vh;
-  color: black;
-  z-index: -1;
-  text-align: center;
-  font-size: xx-large;
+  background-image: url("taust1.jpg");
   animation: fadeIn 1.5s ease-in-out;
+  z-index: -1;
+  height: 100vh;
 }
 
 section {
@@ -79,15 +36,36 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   z-index: 1;
-  height: vh;
+  height: 200vh;
   background: black;
   color: white;
 }
 
-.puffer {
-  width: 100%;
-  min-height: 20vh;
-  background-color: black;
+.profiilikas {
+  width: 30%;
+  height: 65vh;
+  border-radius: 1vmin;
+}
+
+.suur_sisu {
+  width: 60%;
+  line-height: 1.5;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul li:before
+{
+  content: '\263E';
+  margin: 0 1em;    /* any design */
 }
 
 .animate-me {
