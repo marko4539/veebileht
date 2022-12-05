@@ -8,5 +8,9 @@ window.addEventListener("scroll", function() {
     document.querySelector("section h1").classList.add("animate-me")
     document.querySelector("section img").classList.add("animate-me")
     document.querySelector("section nav").classList.add("animate-me")
+    document.querySelector("section h2").classList.add("animate-me")
+    document.querySelector("section ul").classList.add("animate-me")
+    document.querySelector("section suur_sisu").classList.add("animate-me")
+
   }, 400)
 })

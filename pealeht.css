@@ -47,6 +47,10 @@ section {
   border-radius: 1vmin;
 }
 
+.paiknemine{
+  margin-top: 55px;
+}
+
 .suur_sisu {
   width: 60%;
   line-height: 1.5;
