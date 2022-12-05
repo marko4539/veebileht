@@ -1,7 +1,7 @@
 <h1 align="center">Tervist👋 Veebileht tätoveerija Reginale</h1>
 <h3 align="center">Lehe eesmärk oli aidata noorel inimesel enda klientuuri laiendada ja mugavamaks teha talle klientidega suhtlemine. Lisaks lihtsalt on hea kui tema oskused on ühes kohas kirjas.</h3>
 
-- 🔭 Siin on meie link [Tattoo lehele](https://github.com/marko4539/veebileht.git)
+- 🔭 Siin on meie link [Tattoo lehele](https://kodu.ut.ee/~markolaa/VALMISPROJEKT/kontakt.html#Aadress)
 
 - 👯 Töö tegijad olid **Linnea Jerkku, Marko laanemäe, Marlene Ibrus**
 
