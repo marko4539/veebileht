@@ -1,4 +1,4 @@
-function function() {
+function function1() {
   const EFFECT = document.querySelector('#effect');
 
   window.addEventListener('scroll', scrollEffect);
