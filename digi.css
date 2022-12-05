@@ -1,13 +1,4 @@
 
-*{
-	box-sizing: border-box;
-} 
-
-body {
-	margin: 0;
-	color: #0f0e0e;
-	background-color: rgb(0, 0, 0);
-}
 header {
   background-image: url("https://i1.photo.2gis.com/images/profile/30258560051066669_8987_1920x.jpg");
 }
@@ -21,28 +12,21 @@ header {
   position: relative;
 }
 
-.heading {
-  position: absolute;
-  top: 250px;
-  left: 70px;
-}
-
-.vaheparagraaf{
-  color: white;
-  position: relative;
-  left: 42.5%;
-  top: 180%;
-}
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
+  max-width: 70%;
+  height: 80vh;
   position: relative;
   margin: auto;
+  z-index: 0;
 }
   
 /* Hide the images by default */
 .mySlides {
   display: none;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 /* Next & previous buttons */
@@ -65,6 +49,10 @@ header {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -91,10 +79,16 @@ header {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0;
+    filter: blur(5);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
